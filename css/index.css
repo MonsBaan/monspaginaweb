@@ -46,11 +46,20 @@ h1 {
 }
 
 #Bingo {
-    margin: 50px;
-    background-color: red;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: auto auto auto auto auto;
-    width: 100%;
+    margin: 20px;
     height: 50px;
+    margin-left: 29%
+}
+
+th {
+    border: 3px solid blue;
+    width: 150px;
+    height: 150px;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    border: 1px solid blue;
+    font-size: 12px;
 }
