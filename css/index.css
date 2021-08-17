@@ -55,6 +55,11 @@ th {
     border: 3px solid blue;
     width: 150px;
     height: 150px;
+    table-layout: fixed;
+}
+
+tr {
+    table-layout: fixed;
 }
 
 table {
@@ -62,4 +67,10 @@ table {
     text-align: center;
     border: 1px solid blue;
     font-size: 12px;
+    table-layout: fixed;
+}
+
+#token {
+    width: 130px;
+    height: 130px;
 }

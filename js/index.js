@@ -9,14 +9,22 @@ $(document).ready(function() {
         saveText(zonaTexto).forEach(a => {
             arrayTexto.push(a)
         });
-
         arrayFinal = shuffle(arrayTexto);
         html += "<table>"
         for (let i = 0; i < 5; i++) {
             html += "<tr></tr>"
             for (let z = 0; z < 5; z++) {
-                html += "<th>" + arrayFinal[cont] + "</th>"
-                cont++
+                if (i == 2 && z == 2) {
+                    html += "<th><img src='source/mons.png' alt='' id='token'></th>"
+                } else {
+                    if (arrayTexto.length <= cont) {
+                        cont = 0;
+                    }
+                    html += "<th>" + arrayFinal[cont] + "</th>"
+                    cont++
+                }
+
+
             }
             html += "</tr>"
 
