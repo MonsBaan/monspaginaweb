@@ -12,10 +12,10 @@ $(document).ready(function() {
         arrayFinal = shuffle(arrayTexto);
         html += "<table>"
         for (let i = 0; i < 5; i++) {
-            html += "<tr></tr>"
+            html += "<tr>"
             for (let z = 0; z < 5; z++) {
                 if (i == 2 && z == 2) {
-                    html += "<th><img src='source/mons.png' alt='' id='token'></th>"
+                    html += "<th><img src='source/efs.png' alt='' id='token'></th>"
                 } else {
                     if (arrayTexto.length <= cont) {
                         cont = 0;

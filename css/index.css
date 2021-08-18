@@ -48,29 +48,27 @@ h1 {
 #Bingo {
     margin: 20px;
     height: 50px;
-    margin-left: 29%
+    margin-left: 27%
 }
 
-th {
-    border: 3px solid blue;
-    width: 150px;
+#token {
     height: 150px;
-    table-layout: fixed;
-}
-
-tr {
-    table-layout: fixed;
 }
 
 table {
     border-collapse: collapse;
-    text-align: center;
-    border: 1px solid blue;
-    font-size: 12px;
-    table-layout: fixed;
 }
 
-#token {
-    width: 130px;
-    height: 130px;
+table td,
+table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    width: 150px;
+    height: 150px;
+    font-weight: 400;
+}
+
+table th {
+    text-align: center;
+    color: white;
 }
