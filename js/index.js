@@ -10,7 +10,7 @@ $(document).ready(function() {
             arrayTexto.push(a)
         });
         arrayFinal = shuffle(arrayTexto);
-        html += "<table>"
+        html += "<table id='tabla'>"
         for (let i = 0; i < 5; i++) {
             html += "<tr>"
             for (let z = 0; z < 5; z++) {
@@ -20,7 +20,7 @@ $(document).ready(function() {
                     if (arrayTexto.length <= cont) {
                         cont = 0;
                     }
-                    html += "<th>" + arrayFinal[cont] + "</th>"
+                    html += "<th class='opcion'>" + arrayFinal[cont] + "</th>"
                     cont++
                 }
 
@@ -31,6 +31,13 @@ $(document).ready(function() {
         }
         html += "</table>"
         $("#Bingo").html(html)
+
+    });
+
+
+    $(document).on('click', '.opcion', function() {
+        console.log(this)
+        $(this).css("background-color", "#005305")
 
     });
 
