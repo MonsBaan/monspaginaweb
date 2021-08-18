@@ -36,8 +36,12 @@ $(document).ready(function() {
 
 
     $(document).on('click', '.opcion', function() {
-        console.log(this)
-        $(this).css("background-color", "#005305")
+
+        if ($(this).css("background-color") == "rgb(0, 83, 5)") {
+            $(this).css("background-color", "rgba(0, 0, 0, 0)")
+        } else {
+            $(this).css("background-color", "rgb(0, 83, 5)")
+        }
 
     });
 
