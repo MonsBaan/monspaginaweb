@@ -20,8 +20,57 @@ $(document).ready(function() {
                     if (arrayTexto.length <= cont) {
                         cont = 0;
                     }
-                    html += "<th class='opcion'>" + arrayFinal[cont] + "</th>"
-                    cont++
+                    switch (i) {
+                        case 0:
+                            switch (z) {
+                                case 0:
+                                    html += "<th class='opcion' style='border-radius: 20px 0px 0px 0px;'>" + arrayFinal[cont] + "</th>"
+                                    cont++
+                                    break;
+                                case 4:
+                                    html += "<th class='opcion' style='border-radius: 0px 20px 0px 0px;'>" + arrayFinal[cont] + "</th>"
+                                    cont++
+                                    break;
+
+                                default:
+                                    html += "<th class='opcion'>" + arrayFinal[cont] + "</th>"
+                                    cont++
+                                    break;
+                            }
+                            break;
+                        case 4:
+                            switch (z) {
+                                case 0:
+                                    html += "<th class='opcion' style='border-radius: 0px 0px 0px 20px;'>" + arrayFinal[cont] + "</th>"
+                                    cont++
+                                    break;
+                                case 4:
+                                    html += "<th class='opcion' style='border-radius: 0px 0px 20px 0px;'>" + arrayFinal[cont] + "</th>"
+                                    cont++
+                                    break;
+                                default:
+                                    html += "<th class='opcion'>" + arrayFinal[cont] + "</th>"
+                                    cont++
+                                    break;
+                            }
+                            break;
+                        default:
+                            html += "<th class='opcion'>" + arrayFinal[cont] + "</th>"
+                            cont++
+                            break;
+                    }
+
+
+                    /* if (i == 0 && z == 0) {
+                         html += "<th class='opcion' style='border-radius: 20px 0px 0px;'>" + arrayFinal[cont] + "</th>"
+                         cont++
+                     } else {
+                         html += "<th class='opcion'>" + arrayFinal[cont] + "</th>"
+                         cont++
+                     }*/
+
+
+
                 }
 
 

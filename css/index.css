@@ -1,19 +1,31 @@
-h1 {
-    text-align: center;
-    font-weight: 400;
-    font-size: 3rem;
+body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
 }
 
-#menuBingo {
-    display: grid;
-    grid-template-columns: auto 65rem auto;
-    grid-template-rows: auto 100px auto;
-    text-align: center;
+#howto {
+    width: 500px;
     background-color: rgb(61, 61, 61);
     padding: 20px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin: 15px auto;
     border-radius: 20px;
+}
+
+
+/*Panel de Datos*/
+
+#menuBingo {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: auto 65rem auto;
+    grid-template-rows: auto auto auto;
+    text-align: center;
+    background-color: rgb(61, 61, 61);
+    padding: 0px;
+    border-radius: 20px;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 #zonaTexto {
@@ -21,34 +33,34 @@ h1 {
     grid-column: 2;
     border-radius: 5px;
     border: none;
+    resize: vertical;
+    margin-top: 15px;
+    height: 200px;
 }
 
 #crearBingo {
     grid-row: 3;
     grid-column: 2;
-    margin: 10px;
-    height: 70px;
-    margin-right: 35%;
-    margin-left: 35%;
+    margin: 15px auto;
+    height: 45px;
     font-size: 25px;
     font-weight: 500;
     background-color: rgb(114, 158, 196);
     border-radius: 15px;
     border: none;
     color: #3e3c3c;
+    width: 500px;
 }
 
-#label {
-    grid-row: 1;
-    grid-column: 2;
-    margin: 15px;
-    font-size: 20px;
-}
+
+/*TABLA DE BINGO*/
 
 #Bingo {
-    margin: 20px;
-    height: 50px;
-    margin-left: 27%
+    grid-row: 3;
+    margin: 0 auto;
+    margin-top: 15px;
+    border-radius: 20px;
+    background-color: #3d3d3d;
 }
 
 #token {
@@ -58,23 +70,15 @@ h1 {
 table {
     border-collapse: collapse;
     -webkit-touch-callout: none;
-    /* iOS Safari */
     -webkit-user-select: none;
-    /* Safari */
     -khtml-user-select: none;
-    /* Konqueror HTML */
     -moz-user-select: none;
-    /* Firefox */
     -ms-user-select: none;
-    /* Internet Explorer/Edge */
     user-select: none;
-    /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
 }
 
 table td,
 table th {
-    border: 1px solid #ddd;
     padding: 8px;
     width: 150px;
     height: 150px;
