@@ -83,6 +83,7 @@ table th {
     width: 150px;
     height: 150px;
     font-weight: 400;
+    word-break: break-all;
 }
 
 table th {
