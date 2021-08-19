@@ -1,9 +1,3 @@
-body {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
-}
-
 #howto {
     width: 500px;
     background-color: rgb(61, 61, 61);
@@ -22,10 +16,10 @@ body {
     grid-template-rows: auto auto auto;
     text-align: center;
     background-color: rgb(61, 61, 61);
-    padding: 0px;
     border-radius: 20px;
     width: 1200px;
     margin: 0 auto;
+    padding: 10px;
 }
 
 #zonaTexto {
@@ -34,14 +28,13 @@ body {
     border-radius: 5px;
     border: none;
     resize: vertical;
-    margin-top: 15px;
     height: 200px;
 }
 
 #crearBingo {
     grid-row: 3;
     grid-column: 2;
-    margin: 15px auto;
+    margin: 0px auto;
     height: 45px;
     font-size: 25px;
     font-weight: 500;
@@ -50,6 +43,7 @@ body {
     border: none;
     color: #3e3c3c;
     width: 500px;
+    margin-top: 15px;
 }
 
 
@@ -61,6 +55,7 @@ body {
     margin-top: 15px;
     border-radius: 20px;
     background-color: #3d3d3d;
+    width: 830px;
 }
 
 #token {
@@ -75,6 +70,7 @@ table {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    margin: 0 auto;
 }
 
 table td,
@@ -88,4 +84,64 @@ table th {
 table th {
     text-align: center;
     color: white;
+}
+
+@media only screen and (max-width: 1220px) {
+    #howto,
+    #menuBingo,
+    #Bingo {
+        width: 680px;
+    }
+    #menuBingo {
+        grid-template-columns: auto 34.5rem auto;
+    }
+    #zonaTexto,
+    #crearBingo {
+        width: 550px;
+    }
+    table td,
+    table th {
+        padding: 8px;
+        width: 120px;
+        height: 120px;
+        font-weight: 400;
+        font-size: 15px;
+    }
+    #token {
+        height: 120px;
+        width: 75px;
+    }
+    body {
+        height: 1200px;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    #howto,
+    #menuBingo,
+    #Bingo {
+        width: 330px;
+    }
+    #menuBingo {
+        grid-template-columns: auto 15rem auto;
+    }
+    #zonaTexto,
+    #crearBingo {
+        width: 240px;
+    }
+    table td,
+    table th {
+        padding: 8px;
+        width: 50px;
+        height: 50px;
+        font-weight: 400;
+        font-size: 10px;
+    }
+    #token {
+        height: 75px;
+        width: 50px;
+    }
+    body {
+        height: 1200px;
+    }
 }
