@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+
+<head>
+    <meta charset="UTF-32">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="source/+2deFracaso.png">
+
+    <title>+2 De Fracaso</title>
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="scripts/leaflet.css">
+    <script src="scripts/leaflet.js"></script>
+</head>
+
+<body style="height: 100%;margin: 0;">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <img src="source/+2deFracaso.png" class="img-circle" alt="Icono +2 de Fracaso" style="float: left;height: 50px;padding: 5px;">
+                <a class="navbar-brand" href="#">+2 De Fracaso</a>
+
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li class="dropdown active">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Mapas
+              <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="mapaUroboros.html" class="active">Uroboros</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div id="map" style="width: 100%; height: 100%; background: #000000;"></div>
+    <script type="text/javascript">
+        //Creating the Map
+        var map = L.map('map').setView([0, 0], 0);
+        L.tileLayer('map/{z}/{x}/{y}.png', {
+            continuousWorld: false,
+            noWrap: true,
+            minZoom: 3,
+            maxZoom: 5,
+        }).addTo(map);
+        //Coordinate Finder
+        var marker = L.marker([0, 0], {
+            draggable: true,
+        }).addTo(map);
+        marker.bindPopup('LatLng Marker').openPopup();
+        marker.on('dragend', function(e) {
+            marker.getPopup().setContent(marker.getLatLng().toString()).openOn(map);
+        });
+        //Markers
+        var cotan = L.marker([-9.795678, 33.75]).bindPopup('<b>Cotan</b>').addTo(map);
+    </script>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
