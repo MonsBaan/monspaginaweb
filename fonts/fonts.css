@@ -15,30 +15,3 @@
     font-family: "IvyMode";
     src: url("./FontSource/IvyMode-Regular.ttf") format("truetype");
 }
-
-body{
-    background-color: var(--fondo);
-    font-family: "IvyMode";
-
-}
-
-
-h1{
-    color: var(--primario);
-    text-shadow: 0 0 var(--shadowrad) var(--primario);
-
-}
-
-h2{
-    color: var(--acento);
-    text-shadow: 0 0 var(--shadowrad) var(--acento);
-}
-
-i.fa-twitch{
-    color: var(--twitch);
-    text-shadow: 0 0 var(--shadowrad) var(--twitch);
-}
-i.fa-youtube{
-    color: var(--youtube);
-    text-shadow: 0 0 var(--shadowrad) var(--youtube);
-}
