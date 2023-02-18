@@ -1,0 +1,21 @@
+:root{
+    --fondo: #202323;
+    --primario: #CCB76A;
+    --acento: #1D9593;
+}
+
+
+@font-face {
+    font-family: "IvyMode";
+    src: url("./FontSource/IvyMode-Regular.ttf") format("truetype");
+}
+
+body{
+    background-color: var(--fondo);
+}
+
+
+h1{
+    font-family: "IvyMode";
+    color: var(--primario);
+}
