@@ -1,10 +1,20 @@
 @import url("fonts/fonts.css");
+:root{
+    --fondo: #202323;
+    --primario: #CCB76A;
+    --acento: #1D9593;
+
+
+    --twitch: #9046ff;
+    --youtube: #fe0000;
+
+    --shadowrad: 10px
+}
 
 body{
     background-color: var(--fondo);
     font-family: "IvyMode";
 }
-
 
 h1{
     color: var(--primario);

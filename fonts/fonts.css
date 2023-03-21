@@ -1,16 +1,3 @@
-:root{
-    --fondo: #202323;
-    --primario: #CCB76A;
-    --acento: #1D9593;
-
-
-    --twitch: #9046ff;
-    --youtube: #fe0000;
-
-    --shadowrad: 10px
-}
-
-
 @font-face {
     font-family: "IvyMode";
     src: url("./FontSource/IvyMode-Regular.ttf") format("truetype");
