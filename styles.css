@@ -8,18 +8,21 @@
     --twitch: #9046ff;
     --youtube: #fe0000;
 
-    --shadowrad: 10px
+    --shadowrad: 5px
 }
 
 body{
     background-color: var(--fondo);
     font-family: "IvyMode";
+
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 h1{
     color: var(--primario);
     text-shadow: 0 0 var(--shadowrad) var(--primario);
-
 }
 
 h2{
@@ -30,8 +33,24 @@ h2{
 i.fa-twitch{
     color: var(--twitch);
     text-shadow: 0 0 var(--shadowrad) var(--twitch);
+    transition: all 1s ease;
 }
 i.fa-youtube{
     color: var(--youtube);
     text-shadow: 0 0 var(--shadowrad) var(--youtube);
+    transition: all 1s ease;
+
+}
+
+i:hover{
+    --shadowrad: 20px;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
